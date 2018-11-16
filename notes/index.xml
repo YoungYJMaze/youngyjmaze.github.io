@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Young&#39;s Blog</title>
+    <link>https://YoungYJMaze.github.io/notes/</link>
+    <description>Recent content in Notes on Young&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Nov 2018 20:42:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://YoungYJMaze.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Godaddy无法登录</title>
+      <link>https://YoungYJMaze.github.io/notes/godaddy%E6%97%A0%E6%B3%95%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Fri, 16 Nov 2018 20:42:10 +0800</pubDate>
+      
+      <guid>https://YoungYJMaze.github.io/notes/godaddy%E6%97%A0%E6%B3%95%E7%99%BB%E5%BD%95/</guid>
+      <description>Godaddy 无法登录 今天准备管理域名的时候忽然发现godady的导航栏和登录按钮都无法点击，查阅网上的相关问题解答之后看到有朋友说是cookies被拒绝云云，我看到这里想到清除cookies 会不会有什么效果呢,于是在firefox上进行相关操作，结果发现没有效果，这是看到有回答建议说在浏览器的无痕浏览模式下试试，我看firefox上面有提示：
+When you browse in a Private Window, Firefox does not save:
+ visited pages
+ cookies
+ searches
+ temporary files
+  于是开始尝试，果然有效果，但是有时候好像无果，原因目前还不知道，并且在godaddy的英文浏览下仿佛成功率更大一些，方法就是把域名里的zh替换成en</description>
+    </item>
+    
+    <item>
+      <title>解决debian系统python版本问题</title>
+      <link>https://YoungYJMaze.github.io/notes/%E8%A7%A3%E5%86%B3debian%E7%B3%BB%E7%BB%9Fpython%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 16 Nov 2018 20:08:51 +0800</pubDate>
+      
+      <guid>https://YoungYJMaze.github.io/notes/%E8%A7%A3%E5%86%B3debian%E7%B3%BB%E7%BB%9Fpython%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98/</guid>
+      <description>解决debian系统python版本问题 安装完debian之后，电脑上同时存在python2和python3两个版本，
+你可以按照以下方法使用 ls 命令来查看你的系统中都有那些 Python 的二进制文件可供使用:
+$ ls /usr/bin/python* /usr/bin/python /usr/bin/python2 /usr/bin/python2.x /usr/bin/python3 /usr/bin/python3.x  然后执行如下命令查看默认的 Python 版本信息:
+$ python --version Python 2.x.x   基于用户修改Python版本:
+ 想要为某个特定用户修改 Python 版本，只需要在其 home 目录下创建一个 alias(别名) 即可。打开该用户的 ~/.bashrc 文件，添加新的别名信息来修改默认使用的 Python 版本。
+alias python=&#39;/usr/bin/python3.x&#39;
+一旦完成以上操作，重新登录或者重新加载 .bashrc 文件，使操作生效。
+$ . ~/.bashrc
+检查当前的 Python 版本。
+$ python --version Python 3.x.x   基于系统修改Python版本:
+ 我们可以使用 update-alternatives 来为整个系统更改 Python 版本。以 root 身份登录，首先罗列出所有可用的 python 替代版本信息：
+# update-alternatives --list python update-alternatives: error: no alternatives for python  如果出现以上所示的错误信息，则表示 Python 的替代版本尚未被 update-alternatives 命令识别。想解决这个问题，我们需要更新一下替代列表，将 python2.</description>
+    </item>
+    
+    <item>
+      <title>Linux下配置v2ray实现科学上网</title>
+      <link>https://YoungYJMaze.github.io/notes/linux%E4%B8%8B%E9%85%8D%E7%BD%AEv2ray%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <pubDate>Fri, 16 Nov 2018 18:40:54 +0800</pubDate>
+      
+      <guid>https://YoungYJMaze.github.io/notes/linux%E4%B8%8B%E9%85%8D%E7%BD%AEv2ray%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <description>本文转载自https://yuan.ga/v2ray-complete-tutorial/
+这里只是写个人的配置方法，仅供自己查阅，需要查看更详细的信息请移步链接。
+近几天因为CENTOS7系统之前的误操作，所以系统不复存在了，这台HASEE笔记本又不知道什么原因和Ubuntu系统似乎有一些冲突，不管是在命令行下还是图形界面均会在进入之后几秒死机，只好作罢，换成Debian。之前配置的ss就无法继续使用了，恰好学弟的VPS资源空出来了，于是和我一起养这这个VPS，具体服务器端的配置他已配置好，v2ray也是他推荐给我使用的，所以这里不赘述了，在链接中也有提到。
+这里仅讲一下客户端的配置：
+如果系统之前有启动防火墙的请关闭防火墙(假如是firewalld防火墙的话)，正如作者原文中提到的，当你不熟悉系统操作时，防火墙给你带来的负担远大于好处。如果你确定要关闭防火墙，那么运行下面两个命令即可：
+systemctl stop firewalld #停止firewall
+systemctl disable firewalld #禁止firewall开机启动
+如果想重新启动防火墙的话：
+systemctl start firewalld #启动防火墙
+systemctl enable firewalld #设置开机启动
+1.自动安装脚本 V2Ray 官方维护并提供了适用于大多数主流系统的自动安装脚本，只需一行命令即可完成安装，当你想要更新V2Ray 的时候只需要在ROOT权限下（也就是sudo su）运行下面一行命令。（谨慎使用第三方的安装脚本）
+bash &amp;lt;(curl -L -s https://install.direct/go.sh)
+请务必把一整句都打上去，我以为bash只是提醒我在bash中写入命令，结果当然就没有成功。
+2. 修改v2ray vmess 配置 编辑 vim /etc/v2ray/config.json 文件 完整复制粘贴进 config.json 并覆盖原先的内容。
+{ &amp;quot;log&amp;quot;: { &amp;quot;loglevel&amp;quot;: &amp;quot;warning&amp;quot;, &amp;quot;access&amp;quot;: &amp;quot;/var/log/v2ray/access.log&amp;quot;, &amp;quot;error&amp;quot;: &amp;quot;/var/log/v2ray/error.log&amp;quot; }, &amp;quot;inbound&amp;quot;: { &amp;quot;port&amp;quot;: 1080, &amp;quot;listen&amp;quot;: &amp;quot;127.0.0.1&amp;quot;, &amp;quot;protocol&amp;quot;: &amp;quot;socks&amp;quot;, &amp;quot;settings&amp;quot;: { &amp;quot;auth&amp;quot;: &amp;quot;noauth&amp;quot; }, &amp;quot;sniffing&amp;quot;: { &amp;quot;enabled&amp;quot;: true, &amp;quot;destOverride&amp;quot;: [&amp;quot;http&amp;quot;, &amp;quot;tls&amp;quot;] } }, &amp;quot;inboundDetour&amp;quot;: [ { &amp;quot;port&amp;quot;: 8080, &amp;quot;listen&amp;quot;: &amp;quot;127.</description>
+    </item>
+    
+  </channel>
+</rss>

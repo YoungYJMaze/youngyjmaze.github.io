@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Young&#39;s Blog</title>
+    <link>https://YoungYJMaze.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Young&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Nov 2018 18:40:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://YoungYJMaze.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux下配置v2ray实现科学上网</title>
+      <link>https://YoungYJMaze.github.io/notes/linux%E4%B8%8B%E9%85%8D%E7%BD%AEv2ray%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <pubDate>Fri, 16 Nov 2018 18:40:54 +0800</pubDate>
+      
+      <guid>https://YoungYJMaze.github.io/notes/linux%E4%B8%8B%E9%85%8D%E7%BD%AEv2ray%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <description>本文转载自https://yuan.ga/v2ray-complete-tutorial/
+这里只是写个人的配置方法，仅供自己查阅，需要查看更详细的信息请移步链接。
+近几天因为CENTOS7系统之前的误操作，所以系统不复存在了，这台HASEE笔记本又不知道什么原因和Ubuntu系统似乎有一些冲突，不管是在命令行下还是图形界面均会在进入之后几秒死机，只好作罢，换成Debian。之前配置的ss就无法继续使用了，恰好学弟的VPS资源空出来了，于是和我一起养这这个VPS，具体服务器端的配置他已配置好，v2ray也是他推荐给我使用的，所以这里不赘述了，在链接中也有提到。
+这里仅讲一下客户端的配置：
+如果系统之前有启动防火墙的请关闭防火墙(假如是firewalld防火墙的话)，正如作者原文中提到的，当你不熟悉系统操作时，防火墙给你带来的负担远大于好处。如果你确定要关闭防火墙，那么运行下面两个命令即可：
+systemctl stop firewalld #停止firewall
+systemctl disable firewalld #禁止firewall开机启动
+如果想重新启动防火墙的话：
+systemctl start firewalld #启动防火墙
+systemctl enable firewalld #设置开机启动
+1.自动安装脚本 V2Ray 官方维护并提供了适用于大多数主流系统的自动安装脚本，只需一行命令即可完成安装，当你想要更新V2Ray 的时候只需要在ROOT权限下（也就是sudo su）运行下面一行命令。（谨慎使用第三方的安装脚本）
+bash &amp;lt;(curl -L -s https://install.direct/go.sh)
+请务必把一整句都打上去，我以为bash只是提醒我在bash中写入命令，结果当然就没有成功。
+2. 修改v2ray vmess 配置 编辑 vim /etc/v2ray/config.json 文件 完整复制粘贴进 config.json 并覆盖原先的内容。
+{ &amp;quot;log&amp;quot;: { &amp;quot;loglevel&amp;quot;: &amp;quot;warning&amp;quot;, &amp;quot;access&amp;quot;: &amp;quot;/var/log/v2ray/access.log&amp;quot;, &amp;quot;error&amp;quot;: &amp;quot;/var/log/v2ray/error.log&amp;quot; }, &amp;quot;inbound&amp;quot;: { &amp;quot;port&amp;quot;: 1080, &amp;quot;listen&amp;quot;: &amp;quot;127.0.0.1&amp;quot;, &amp;quot;protocol&amp;quot;: &amp;quot;socks&amp;quot;, &amp;quot;settings&amp;quot;: { &amp;quot;auth&amp;quot;: &amp;quot;noauth&amp;quot; }, &amp;quot;sniffing&amp;quot;: { &amp;quot;enabled&amp;quot;: true, &amp;quot;destOverride&amp;quot;: [&amp;quot;http&amp;quot;, &amp;quot;tls&amp;quot;] } }, &amp;quot;inboundDetour&amp;quot;: [ { &amp;quot;port&amp;quot;: 8080, &amp;quot;listen&amp;quot;: &amp;quot;127.</description>
+    </item>
+    
+  </channel>
+</rss>

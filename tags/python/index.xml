@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Young&#39;s Blog</title>
+    <link>https://YoungYJMaze.github.io/tags/python/</link>
+    <description>Recent content in Python on Young&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Nov 2018 20:08:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://YoungYJMaze.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>解决debian系统python版本问题</title>
+      <link>https://YoungYJMaze.github.io/notes/%E8%A7%A3%E5%86%B3debian%E7%B3%BB%E7%BB%9Fpython%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 16 Nov 2018 20:08:51 +0800</pubDate>
+      
+      <guid>https://YoungYJMaze.github.io/notes/%E8%A7%A3%E5%86%B3debian%E7%B3%BB%E7%BB%9Fpython%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98/</guid>
+      <description>解决debian系统python版本问题 安装完debian之后，电脑上同时存在python2和python3两个版本，
+你可以按照以下方法使用 ls 命令来查看你的系统中都有那些 Python 的二进制文件可供使用:
+$ ls /usr/bin/python* /usr/bin/python /usr/bin/python2 /usr/bin/python2.x /usr/bin/python3 /usr/bin/python3.x  然后执行如下命令查看默认的 Python 版本信息:
+$ python --version Python 2.x.x   基于用户修改Python版本:
+ 想要为某个特定用户修改 Python 版本，只需要在其 home 目录下创建一个 alias(别名) 即可。打开该用户的 ~/.bashrc 文件，添加新的别名信息来修改默认使用的 Python 版本。
+alias python=&#39;/usr/bin/python3.x&#39;
+一旦完成以上操作，重新登录或者重新加载 .bashrc 文件，使操作生效。
+$ . ~/.bashrc
+检查当前的 Python 版本。
+$ python --version Python 3.x.x   基于系统修改Python版本:
+ 我们可以使用 update-alternatives 来为整个系统更改 Python 版本。以 root 身份登录，首先罗列出所有可用的 python 替代版本信息：
+# update-alternatives --list python update-alternatives: error: no alternatives for python  如果出现以上所示的错误信息，则表示 Python 的替代版本尚未被 update-alternatives 命令识别。想解决这个问题，我们需要更新一下替代列表，将 python2.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>想法 on Young&#39;s Blog</title>
+    <link>https://YoungYJMaze.github.io/essay/</link>
+    <description>Recent content in 想法 on Young&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Nov 2018 18:54:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://YoungYJMaze.github.io/essay/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于建立这个博客</title>
+      <link>https://YoungYJMaze.github.io/essay/%E5%85%B3%E4%BA%8E%E5%BB%BA%E7%AB%8B%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 15 Nov 2018 19:00:27 +0800</pubDate>
+      
+      <guid>https://YoungYJMaze.github.io/essay/%E5%85%B3%E4%BA%8E%E5%BB%BA%E7%AB%8B%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>关于建立这个博客 其实自己一直都有想建立一个博客的想法，但是苦于之前前端知识的不充足，以及时间也不够充裕，所以这个想法就一直被搁置了下来。
+最近加入了一个学校里一个实验室，接触到了hugo这个框架，生成个人博客真的很方便！所以就再次萌生了这个想法，并且于今日付诸实践，之后会陆续把自己的笔记都搬运过来，之前一直拿记事本记录的习惯也终于可以改改了。
+就这样，新的博客，你好阿。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/essay/</loc>
+    <lastmod>2018-11-15T18:54:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/notes/godaddy%E6%97%A0%E6%B3%95%E7%99%BB%E5%BD%95/</loc>
+    <lastmod>2018-11-16T20:42:10+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/notes/%E8%A7%A3%E5%86%B3debian%E7%B3%BB%E7%BB%9Fpython%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2018-11-16T20:08:51+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/notes/linux%E4%B8%8B%E9%85%8D%E7%BD%AEv2ray%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+    <lastmod>2018-11-16T18:40:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/essay/%E5%85%B3%E4%BA%8E%E5%BB%BA%E7%AB%8B%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2018-11-15T19:00:27+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/tags/debian/</loc>
+    <lastmod>2018-11-16T20:08:51+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/tags/linux/</loc>
+    <lastmod>2018-11-16T18:40:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/notes/</loc>
+    <lastmod>2018-11-16T20:42:10+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/tags/python/</loc>
+    <lastmod>2018-11-16T20:08:51+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/tags/</loc>
+    <lastmod>2018-11-16T20:08:51+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/tags/web/</loc>
+    <lastmod>2018-11-16T20:42:10+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/</loc>
+    <lastmod>2018-11-16T20:42:10+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://YoungYJMaze.github.io/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
