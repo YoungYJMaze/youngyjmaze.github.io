@@ -6,10 +6,26 @@
     <description>Recent content on Young&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Nov 2018 20:42:10 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Nov 2018 13:05:30 +0800</lastBuildDate>
     
 	<atom:link href="https://YoungYJMaze.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flask中遇到的问题</title>
+      <link>https://YoungYJMaze.github.io/notes/flask%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sat, 17 Nov 2018 13:05:30 +0800</pubDate>
+      
+      <guid>https://YoungYJMaze.github.io/notes/flask%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description> 1.虚拟环境下默认环境为python2 但是python2对于python文件运行的默认编码不是utf-8，会提示以下错误：
+SyntaxError: Non-ASCII character &#39;\xe8&#39; in file /home/yang/gitdata/flasky/app/models.py on line 335, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details  这时需要在文件开头加上
+# -*- coding: UTF-8 -*-
+来使python解释器按 utf-8 进行解释
+另一种一劳永逸的方式
+在python的lib/site-packages文件夹下新建一个sitecustomize.py文件 （或者直接在python文件夹下寻找这个文件，笔者是这样做的，笔者系统debian自带的python2.7）
+在其中加入以下代码：
+# encoding=utf-8 import sys reload(sys) sys.setdefaultencoding(&#39;utf-8&#39;)  </description>
+    </item>
     
     <item>
       <title>Godaddy无法登录</title>

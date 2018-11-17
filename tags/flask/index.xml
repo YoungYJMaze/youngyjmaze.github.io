@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web on Young&#39;s Blog</title>
-    <link>https://YoungYJMaze.github.io/tags/web/</link>
-    <description>Recent content in Web on Young&#39;s Blog</description>
+    <title>Flask on Young&#39;s Blog</title>
+    <link>https://YoungYJMaze.github.io/tags/flask/</link>
+    <description>Recent content in Flask on Young&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Nov 2018 13:05:30 +0800</lastBuildDate>
     
-	<atom:link href="https://YoungYJMaze.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://YoungYJMaze.github.io/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,21 +25,6 @@ SyntaxError: Non-ASCII character &#39;\xe8&#39; in file /home/yang/gitdata/flask
 在python的lib/site-packages文件夹下新建一个sitecustomize.py文件 （或者直接在python文件夹下寻找这个文件，笔者是这样做的，笔者系统debian自带的python2.7）
 在其中加入以下代码：
 # encoding=utf-8 import sys reload(sys) sys.setdefaultencoding(&#39;utf-8&#39;)  </description>
-    </item>
-    
-    <item>
-      <title>Godaddy无法登录</title>
-      <link>https://YoungYJMaze.github.io/notes/godaddy%E6%97%A0%E6%B3%95%E7%99%BB%E5%BD%95/</link>
-      <pubDate>Fri, 16 Nov 2018 20:42:10 +0800</pubDate>
-      
-      <guid>https://YoungYJMaze.github.io/notes/godaddy%E6%97%A0%E6%B3%95%E7%99%BB%E5%BD%95/</guid>
-      <description>Godaddy 无法登录 今天准备管理域名的时候忽然发现godady的导航栏和登录按钮都无法点击，查阅网上的相关问题解答之后看到有朋友说是cookies被拒绝云云，我看到这里想到清除cookies 会不会有什么效果呢,于是在firefox上进行相关操作，结果发现没有效果，这是看到有回答建议说在浏览器的无痕浏览模式下试试，我看firefox上面有提示：
-When you browse in a Private Window, Firefox does not save:
- visited pages
- cookies
- searches
- temporary files
-  于是开始尝试，果然有效果，但是有时候好像无果，原因目前还不知道，并且在godaddy的英文浏览下仿佛成功率更大一些，方法就是把域名里的zh替换成en</description>
     </item>
     
   </channel>
