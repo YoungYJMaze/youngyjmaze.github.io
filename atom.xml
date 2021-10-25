@@ -6,7 +6,7 @@
   <link href="http://youngyjmaze.github.io/atom.xml" rel="self"/>
   
   <link href="http://youngyjmaze.github.io/"/>
-  <updated>2021-10-25T08:26:15.771Z</updated>
+  <updated>2021-10-25T08:31:18.703Z</updated>
   <id>http://youngyjmaze.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://youngyjmaze.github.io/2021/10/25/yield/"/>
     <id>http://youngyjmaze.github.io/2021/10/25/yield/</id>
     <published>2021-10-25T08:21:17.000Z</published>
-    <updated>2021-10-25T08:26:15.771Z</updated>
+    <updated>2021-10-25T08:31:18.703Z</updated>
     
-    <content type="html"><![CDATA[<p>yield 可以用来把函数当做一个迭代器使用。<br>‘’’<br>#!/usr/bin/python</p><h1 id="coding-UTF-8"><a href="#coding-UTF-8" class="headerlink" title="-- coding: UTF-8 --"></a>-<em>- coding: UTF-8 -</em>-</h1><p>def fab(max):<br>    n, a, b = 0, 0, 1<br>    while n &lt; max:<br>        yield b      # 使用 yield<br>        # print b<br>        a, b = b, a + b<br>        n = n + 1</p><p>for n in fab(5):<br>    print n<br>‘’’<br>打印斐波那契数列的函数中，每次yield 都相当于 return 一个b的新值，</p><p> yield也可以用于文件读取。如果直接对文件对象调用 read() 方法，会导致不可预测的内存占用。好的方法是利用固定长度的缓冲区来不断读取文件内容。通过 yield，我们不再需要编写读文件的迭代类，就可以轻松实现文件读取：<br>‘’’<br>def read_file(fpath):<br>    BLOCK_SIZE = 1024<br>    with open(fpath, ‘rb’) as f:<br>        while True:<br>            block = f.read(BLOCK_SIZE)<br>            if block:<br>                yield block<br>            else:<br>                return<br>‘’’ </p><p>仅仅是简单的使用方法,之后再继续学习补充。</p>]]></content>
+    <content type="html"><![CDATA[<p>yield 可以用来把函数当做一个迭代器使用。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python</span><br><span class="line"># -*- coding: UTF-8 -*-</span><br><span class="line"> </span><br><span class="line">def fab(max): </span><br><span class="line">    n, a, b = 0, 0, 1 </span><br><span class="line">    while n &lt; max: </span><br><span class="line">        yield b      # 使用 yield</span><br><span class="line">        # print b </span><br><span class="line">        a, b = b, a + b </span><br><span class="line">        n = n + 1</span><br><span class="line"> </span><br><span class="line">for n in fab(5): </span><br><span class="line">    print n</span><br></pre></td></tr></table></figure><p>打印斐波那契数列的函数中，每次yield 都相当于 return 一个b的新值，</p><p> yield也可以用于文件读取。如果直接对文件对象调用 read() 方法，会导致不可预测的内存占用。好的方法是利用固定长度的缓冲区来不断读取文件内容。通过 yield，我们不再需要编写读文件的迭代类，就可以轻松实现文件读取：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def read_file(fpath): </span><br><span class="line">    BLOCK_SIZE = 1024 </span><br><span class="line">    with open(fpath, &#x27;rb&#x27;) as f: </span><br><span class="line">        while True: </span><br><span class="line">            block = f.read(BLOCK_SIZE) </span><br><span class="line">            if block: </span><br><span class="line">                yield block </span><br><span class="line">            else: </span><br><span class="line">                return</span><br></pre></td></tr></table></figure><p>仅仅是简单的使用方法,之后再继续学习补充。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;yield 可以用来把函数当做一个迭代器使用。&lt;br&gt;‘’’&lt;br&gt;#!/usr/bin/python&lt;/p&gt;
-&lt;h1 id=&quot;coding-UTF-8&quot;&gt;&lt;a href=&quot;#coding-UTF-8&quot; class=&quot;headerlink&quot; title=&quot;-- coding</summary>
+    <summary type="html">&lt;p&gt;yield 可以用来把函数当做一个迭代器使用。&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span c</summary>
       
     
     
